@@ -2,45 +2,54 @@
   margin: 0;
   padding: 0; }
 
-nav * {
-  height: 40px;
-  padding: 0;
-  margin: 0; }
+nav {
+  background-color: #233040; }
+  nav * {
+    height: 40px;
+    padding: 0;
+    margin: 0; }
+  nav input[type=button] {
+    width: 40px; }
 
 .grid-container {
+  height: 70px;
   display: grid;
-  background-color: #233040;
-  grid-template-columns: 100px minmax(300px, 100%) 30px 200px;
-  grid-gap: 10px; }
-  .grid-container div {
-    background-color: rgba(255, 255, 255, 0.8); }
-    .grid-container div input[type=text] {
-      width: 100%;
-      font-size: 18px;
-      padding-left: 8px; }
+  grid-template-columns: 100px minmax(300px, 100%) 40px 200px;
+  grid-gap: 10px;
+  align-items: center; }
+  .grid-container div input[type=text] {
+    width: 100%;
+    font-size: 18px;
+    padding-left: 8px; }
 
 .flexbox {
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row;
   align-items: center;
-  justify-content: center;
-  background: #45ACCD; }
+  justify-content: start; }
   .flexbox div {
     padding: 1%;
     margin: 2%;
     width: 18%;
-    background: green; }
+    background: rgba(255, 255, 255, 0.8); }
     .flexbox div img {
       width: 90%;
       max-width: 100%;
       display: block;
       margin: 0 auto; }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .flexbox div {
-    width: 25%; }
+    width: 25%;
+    min-width: 200px; }
   .flexbox div:nth-child(4) {
     display: none; } }
+main {
+  background: url(http://www.gsfdcy.com/data/img/30/1466904-family-guy-wallpaper.jpg);
+  repeat: no-repeat;
+  background-size: 100%; }
+  main .placeholder {
+    height: 200px; }
 
 /*# sourceMappingURL=amaz.css.map */
