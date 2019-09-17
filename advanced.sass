@@ -1,0 +1,51 @@
+*
+	
+
+nav
+	background: #653d3d
+	display: inline-block
+	width: 100%
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+		li:hover
+			background: #875f5f
+		li
+			border: 2px solid #875f5f
+			padding: 2%
+			float: left
+			a
+				color: #ccc
+				text-decoration: none
+				font-weight: bold
+				font-size: 4vw
+
+.wrapper 
+	width: 80%
+	max-width: 1200px
+	margin: 0 auto
+
+.flexbox
+	display: flex
+	flex-wrap: wrap
+	margin: 0 auto
+	align-items: center
+	justify-content: center
+	div
+		width: 18%
+		padding: 10px
+		img
+			width: 100%
+			max-width: 100%
+
+@media screen and (max-width: 1200px) and (min-width: 641px)
+	.flexbox div
+		width: 31%
+		padding: 5px
+
+@media screen and (max-width: 640px)
+	.flexbox
+		flex-flow: column
+		div
+			width: 90%
